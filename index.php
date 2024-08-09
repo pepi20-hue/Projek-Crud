@@ -27,7 +27,7 @@ if(!isset($_SESSION['log']) || $_SESSION['log'] !== 'True'){
 <body class="sb-nav-fixed">
     <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
         <!-- Navbar Brand-->
-        <a class="navbar-brand ps-3" href="index.html"><img src ="banjarbaru.png" alt="logo" style="width:20px;height:25px;vertical-align:middle margin-right:10px;">Diskominfo</a>
+        <a class="navbar-brand ps-3" href="index.php"><img src ="c.png" alt="logo" style="width:20px;height:25px;vertical-align:middle margin-right:10px;">Diskominfo</a>
         <!-- Sidebar Toggle-->
         <button class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0" id="sidebarToggle" href="#!"><i class="fas fa-bars"></i></button>
         <!-- Navbar Search-->
