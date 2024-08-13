@@ -6,7 +6,7 @@ require "db/function.php";
 // Check if form is submitted
 if(isset($_POST['login'])){
     $username = $_POST['username'];
-    $password = $_POST['password'];
+      $password = $_POST['password'];
 
     // Validate email and password are not empty
     if (!empty($username) && !empty($password)) {
