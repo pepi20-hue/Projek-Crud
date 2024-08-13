@@ -1,0 +1,124 @@
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #000; /* Background gelap */
+}
+
+.container {
+    display: flex;
+    gap: 20px;
+}
+
+.box {
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    border-radius: 10px;
+    background: linear-gradient(270deg, #ff0000, #00ff00, #0000ff);
+    background-size: 600% 600%;
+    animation: rgbAnimation 4s ease infinite;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease;
+}
+
+@keyframes rgbAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.admin {
+    background-color: rgba(255, 0, 0, 0.7); /* Warna kotak Admin */
+}
+
+.user {
+    background-color: rgba(0, 0, 255, 0.7); /* Warna kotak User */
+}
+.stock-container {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.stock-box-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.stock-box-container .box {
+    width: 200px;
+    height: 150px;
+}
+
+h3 {
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes rgbTextOutline {
+    0% {
+        text-shadow: 
+            0 0 5px #ff0000, 
+            0 0 10px #ff0000, 
+            0 0 15px #ff0000, 
+            0 0 20px #ff0000, 
+            0 0 25px #ff0000;
+    }
+    25% {
+        text-shadow: 
+            0 0 5px #00ff00, 
+            0 0 10px #00ff00, 
+            0 0 15px #00ff00, 
+            0 0 20px #00ff00, 
+            0 0 25px #00ff00;
+    }
+    50% {
+        text-shadow: 
+            0 0 5px #0000ff, 
+            0 0 10px #0000ff, 
+            0 0 15px #0000ff, 
+            0 0 20px #0000ff, 
+            0 0 25px #0000ff;
+    }
+    75% {
+        text-shadow: 
+            0 0 5px #ff00ff, 
+            0 0 10px #ff00ff, 
+            0 0 15px #ff00ff, 
+            0 0 20px #ff00ff, 
+            0 0 25px #ff00ff;
+    }
+    100% {
+        text-shadow: 
+            0 0 5px #ffff00, 
+            0 0 10px #ffff00, 
+            0 0 15px #ffff00, 
+            0 0 20px #ffff00, 
+            0 0 25px #ffff00;
+    }
+}
+
+h3 {
+    color: white;
+    font-size: 36px;
+    animation: rgbTextOutline 3s infinite;
+}
